@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Company Survey Form
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  <body>
+    <h1 id="title">Company Survey Form</h1>
+    <p id="description">Thank you for participating in this survey</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label" class="flex">Name <input id="name" placeholder="Enter your name" type="text" required class="size"></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="email" id="email-label" class="flex">Email <input id="email" type="email" placeholder="Enter your email" required class="size"></label>
+      </fieldset>
+
+      <fieldset>
+        <label for="number" id="number-label" class="flex">Age (optional) <input id="number" type="number" min="18" max="120" placeholder="Age" class="size"></label>
+      </fieldset>
+
+      <fieldset>
+        <label  class="flex">Which option best describes your current role? 
+          <select id="dropdown" class="size">
+            <option value="role">Select current role</option>
+            <option value="management">Management</option>
+            <option value="non-management">Non-management</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Would you recommend Company to a friend?</legend>
+        <label><input type="radio" name="recommendation" value="Definitely" checked> Definitely</label>
+        <br>
+        <label><input type="radio" name="recommendation" value="Maybe"> Maybe</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What would you like to see improved? (check all that apply)</legend>
+        <label><input type="checkbox" value="Chairs"> Chairs</label>
+        <br>
+        <label><input type="checkbox" value="Desks"> Desks</label>
+      </fieldset>
+
+      <fieldset>
+        <label>Any comments or suggestions?
+          <br>
+          <textarea placeholder="Enter your comment here..."></textarea>
+      </fieldset>
+
+      <label for="submit"><input type="submit" id="submit"></label>
+    </form>
+  </body>
+</html>
