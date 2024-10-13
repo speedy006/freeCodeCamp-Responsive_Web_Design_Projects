@@ -1,10 +1,14 @@
+.navbar {
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+}
+
+.main-section {
+  margin-left: 200px;
+  padding: 20px;
+}
+
 .navbar a {
   display: block;
 }
-
-@media only screen and (max_width: 600px) {
-  code {
-    background-color: red;
-  }
-}
-
